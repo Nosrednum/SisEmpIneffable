@@ -1,0 +1,138 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.ineffableErrorsList.controller.RequestDetail" xmlns="sap.m"
+	xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Page title="Bug Details" showHeader="true" showFooter="true" showNavButton="false">
+		<content>
+			<ObjectHeader intro="" title="{ID}" number="{state}" numberUnit="" numberState="None" backgroundDesign="Transparent" condensed="false"
+				visible="true">
+				<attributes>
+					<ObjectAttribute title="" text="{description}" active="false" visible="true"/>
+					<ObjectAttribute title="Fecha de creación"
+						text="{path: 'createdAt', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" active="false" visible="true"/>
+				</attributes>
+				<statuses/>
+				<markers/>
+			</ObjectHeader>
+			<layout:VerticalLayout width="100%" visible="true">
+				<layout:content>
+					<layout:VerticalLayout width="100%" visible="true">
+						<layout:content/>
+					</layout:VerticalLayout>
+					<HBox alignItems="Center" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Center" renderType="Div"
+						visible="true" displayInline="false">
+						<items>
+							<form:Form width="613.3125px" editable="true" visible="true">
+								<form:title>
+									<core:Title text="Información del error" level="Auto"/>
+								</form:title>
+								<form:formContainers>
+									<form:FormContainer visible="true">
+										<form:formElements>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="Estado" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</form:label>
+												<form:fields>
+													<Text text="{priorityLevel}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</form:fields>
+											</form:FormElement>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="Colección" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</form:label>
+												<form:fields>
+													<Text text="{collection}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</form:fields>
+											</form:FormElement>
+										</form:formElements>
+										<form:title/>
+									</form:FormContainer>
+								</form:formContainers>
+								<form:layout>
+									<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+								</form:layout>
+							</form:Form>
+							<ObjectListItem intro="Desarrollador asignado" title="{devName}" icon="sap-icon://employee" number="" numberUnit="" numberState="None"
+								type="Active" selected="true" showMarkers="false">
+								<attributes/>
+								<firstStatus/>
+								<secondStatus/>
+							</ObjectListItem>
+						</items>
+						<layoutData/>
+					</HBox>
+				</layout:content>
+			</layout:VerticalLayout>
+			<layout:BlockLayout background="Default" visible="true">
+				<layout:content>
+					<layout:BlockLayoutRow scrollable="false" class="sapUiTinyMargin">
+						<layout:content>
+							<layout:BlockLayoutCell width="1" title="Documentos asociados" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<List mode="None" width="100%" headerText="Header" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true"
+										growingThreshold="20" growingScrollToLoad="true" items="{path:'documentosAdjuntos', templateShareable:true}">
+										<infoToolbar>
+											<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+												<content>
+													<Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</content>
+											</Toolbar>
+										</infoToolbar>
+										<headerToolbar>
+											<Toolbar enabled="true" visible="false" width="" design="Solid">
+												<content>
+													<SearchField placeholder="Search" showSearchButton="true" visible="true" width="100%"/>
+												</content>
+											</Toolbar>
+										</headerToolbar>
+										<items>
+											<DisplayListItem label="{name}" value="" visible="true" type="Navigation" selected="false" press="_onDisplayListItemPress"/>
+										</items>
+									</List>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+					<layout:BlockLayoutRow scrollable="false" class="sapUiTinyMargin">
+						<layout:content>
+							<layout:BlockLayoutCell width="1" title="Vista del error" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<Image src="{imageUrl}" height="219.6374969482422px" width="390.4624938964844px" visible="true" densityAware="false"/>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="2" title="Historial del error" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<List width="auto" headerText="" footerText="" backgroundDesign="Solid" growing="true" growingThreshold="20" growingScrollToLoad="true"
+										visible="true" items="{path:'Object', templateShareable:true}">
+										<items>
+											<NotificationListItem title="{name}" description="{description}" authorName="{createdBy}" authorPicture="sap-icon://kpi-managing-my-area"
+												datetime="{path: 'createdAt', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" priority="None" unread="true"
+												truncate="true" hideShowMoreButton="false" showCloseButton="true" visible="true" close="_onNotificationListItemClose">
+												<buttons/>
+												<processingMessage/>
+											</NotificationListItem>
+										</items>
+									</List>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+				</layout:content>
+			</layout:BlockLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="auto" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Text text="Desarrollado por el equipo de Ineffable Inventions" width="auto" maxLines="1" wrapping="false" textAlign="Center"
+						textDirection="Inherit" visible="true"/>
+					<Button text="" type="Default" icon="sap-icon://action" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+	</Page>
+</mvc:View>

@@ -1,0 +1,47 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.ineffableErrorsList.controller.ErrorsListEp" xmlns="sap.m">
+	<Page title="Errores" showHeader="true" showFooter="true" showNavButton="false">
+		<content>
+			<Button text="Atras" type="Default" icon="sap-icon://nav-back" iconFirst="true" width="auto" enabled="true" visible="true"
+				iconDensityAware="false" press="_onButtonPress"/>
+			<List id="sap_List_Page_0-im2v9q0dxhihwkgvw7d0gio93_S3-content-sap_m_ObjectList-1607661287876" mode="SingleSelectMaster" width="318.625px"
+				headerText="Header" footerText="" backgroundDesign="Solid" showSeparators="All" growing="false" growingThreshold="20"
+				growingScrollToLoad="true" visible="true" itemPress="_onObjectListItemPress" items="{path:'/BugSet', templateShareable:true}">
+				<infoToolbar>
+					<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+						<content>
+							<Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</content>
+					</Toolbar>
+				</infoToolbar>
+				<headerToolbar>
+					<Toolbar enabled="true" visible="true" width="" design="Solid">
+						<content>
+							<SearchField placeholder="Search" showSearchButton="true" visible="true" width="100%"/>
+						</content>
+					</Toolbar>
+				</headerToolbar>
+				<items>
+					<ObjectListItem intro="{ID}" title="{associatedApp}" number="" numberUnit="" numberState="None" type="Active" selected="true"
+						showMarkers="false">
+						<attributes>
+							<ObjectAttribute title="" text="Urgente" active="false" visible="true"/>
+							<ObjectAttribute title="" text="{path: 'createdAt', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}"
+								active="false" visible="true"/>
+						</attributes>
+						<firstStatus/>
+						<secondStatus/>
+					</ObjectListItem>
+				</items>
+			</List>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="auto" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+	</Page>
+</mvc:View>

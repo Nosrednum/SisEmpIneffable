@@ -1,0 +1,120 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="cde2dc5359fc992514761ed9" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityContainer Name="cde2dc5359fc992514761ed9_Entities" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="BugSet" EntityType="cde2dc5359fc992514761ed9.Bug" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+				<AssociationSet Name="BugdocumentosAdjuntosDocumento" Association="cde2dc5359fc992514761ed9.BugdocumentosAdjuntosDocumento"
+					sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="BugSet" Role="FromRole_BugdocumentosAdjuntosDocumento"/>
+					<End EntitySet="DocumentoSet" Role="ToRole_BugdocumentosAdjuntosDocumento"/>
+				</AssociationSet>
+				<AssociationSet Name="BugObjecterrorHistorico" Association="cde2dc5359fc992514761ed9.BugObjecterrorHistorico" sap:creatable="true"
+					sap:updatable="true" sap:deletable="true">
+					<End EntitySet="BugSet" Role="FromRole_BugObjecterrorHistorico"/>
+					<End EntitySet="errorHistoricoSet" Role="ToRole_BugObjecterrorHistorico"/>
+				</AssociationSet>
+				<EntitySet Name="DocumentoSet" EntityType="cde2dc5359fc992514761ed9.Documento" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true"/>
+				<EntitySet Name="errorHistoricoSet" EntityType="cde2dc5359fc992514761ed9.errorHistorico" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true"/>
+				<EntitySet Name="EmpresaSet" EntityType="cde2dc5359fc992514761ed9.Empresa" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+				<AssociationSet Name="EmpresaRelationNameBug" Association="cde2dc5359fc992514761ed9.EmpresaRelationNameBug" sap:creatable="true"
+					sap:updatable="true" sap:deletable="true">
+					<End EntitySet="EmpresaSet" Role="FromRole_EmpresaRelationNameBug"/>
+					<End EntitySet="BugSet" Role="ToRole_EmpresaRelationNameBug"/>
+				</AssociationSet>
+			</EntityContainer>
+			<EntityType Name="Bug">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="associatedApp" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="OriginApp"/>
+				<Property Name="createdAt" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date"
+					sap:label="Date"/>
+				<Property Name="collection" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CollectionName"/>
+				<Property Name="state" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="State"/>
+				<Property Name="description" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Datauks"/>
+				<Property Name="priorityLevel" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="priorityLevel"/>
+				<Property Name="reportedBy" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="reportedBy"/>
+				<Property Name="imageUrl" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="imageUrl"/>
+				<Property Name="devName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="devName"/>
+				<Property Name="___FK_50263d6ce4fd07be1495b67e_00003" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_50263d6ce4fd07be1495b67e_00003"/>
+				<NavigationProperty Name="documentosAdjuntos" Relationship="cde2dc5359fc992514761ed9.BugdocumentosAdjuntosDocumento"
+					FromRole="FromRole_BugdocumentosAdjuntosDocumento" ToRole="ToRole_BugdocumentosAdjuntosDocumento"/>
+				<NavigationProperty Name="Object" Relationship="cde2dc5359fc992514761ed9.BugObjecterrorHistorico"
+					FromRole="FromRole_BugObjecterrorHistorico" ToRole="ToRole_BugObjecterrorHistorico"/>
+			</EntityType>
+			<Association Name="BugdocumentosAdjuntosDocumento">
+				<End Type="cde2dc5359fc992514761ed9.Bug" Multiplicity="1" Role="FromRole_BugdocumentosAdjuntosDocumento"/>
+				<End Type="cde2dc5359fc992514761ed9.Documento" Multiplicity="*" Role="ToRole_BugdocumentosAdjuntosDocumento"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_BugdocumentosAdjuntosDocumento">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="ToRole_BugdocumentosAdjuntosDocumento">
+						<PropertyRef Name="___FK_7a2edeae6f0aec2a148c5e76_00009"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="BugObjecterrorHistorico">
+				<End Type="cde2dc5359fc992514761ed9.Bug" Multiplicity="1" Role="FromRole_BugObjecterrorHistorico"/>
+				<End Type="cde2dc5359fc992514761ed9.errorHistorico" Multiplicity="*" Role="ToRole_BugObjecterrorHistorico"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_BugObjecterrorHistorico">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="ToRole_BugObjecterrorHistorico">
+						<PropertyRef Name="___FK_fd995a79c2a2a823148c658a_00004"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityType Name="Documento" sap:pdm-semantics="business-data">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="name" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="name"/>
+				<Property Name="url" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="url"/>
+				<Property Name="___FK_7a2edeae6f0aec2a148c5e76_00009" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_7a2edeae6f0aec2a148c5e76_00009"/>
+			</EntityType>
+			<EntityType Name="errorHistorico" sap:pdm-semantics="business-data">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="___FK_fd995a79c2a2a823148c658a_00004" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_fd995a79c2a2a823148c658a_00004"/>
+				<Property Name="name" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DefaultName"/>
+				<Property Name="description" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DefaultName"/>
+				<Property Name="createdBy" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DefaultName1"/>
+				<Property Name="createdAt" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date"
+					sap:label="createdAt"/>
+			</EntityType>
+			<EntityType Name="Empresa">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="nombre" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="nombre"/>
+				<NavigationProperty Name="RelationName" Relationship="cde2dc5359fc992514761ed9.EmpresaRelationNameBug"
+					FromRole="FromRole_EmpresaRelationNameBug" ToRole="ToRole_EmpresaRelationNameBug"/>
+			</EntityType>
+			<Association Name="EmpresaRelationNameBug">
+				<End Type="cde2dc5359fc992514761ed9.Empresa" Multiplicity="1" Role="FromRole_EmpresaRelationNameBug"/>
+				<End Type="cde2dc5359fc992514761ed9.Bug" Multiplicity="*" Role="ToRole_EmpresaRelationNameBug"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_EmpresaRelationNameBug">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="ToRole_EmpresaRelationNameBug">
+						<PropertyRef Name="___FK_50263d6ce4fd07be1495b67e_00003"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

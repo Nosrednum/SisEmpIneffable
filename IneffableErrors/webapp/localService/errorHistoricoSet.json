@@ -1,0 +1,365 @@
+[{
+	"ID": "1",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP01",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Transplaneta",
+	"createdAt": "/Date(1597536000000)/"
+}, {
+	"ID": "2",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC01",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Ecoempaques",
+	"createdAt": "/Date(1581984000000)/"
+}, {
+	"ID": "3",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO01",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Concilium",
+	"createdAt": "/Date(1601337600000)/"
+}, {
+	"ID": "4",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP02",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Transplaneta",
+	"createdAt": "/Date(1604620800000)/"
+}, {
+	"ID": "5",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC02",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Ecoempaques",
+	"createdAt": "/Date(1595376000000)/"
+}, {
+	"ID": "6",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO02",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Concilium",
+	"createdAt": "/Date(1601164800000)/"
+}, {
+	"ID": "7",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP03",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Transplaneta",
+	"createdAt": "/Date(1605830400000)/"
+}, {
+	"ID": "8",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC03",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Ecoempaques",
+	"createdAt": "/Date(1577491200000)/"
+}, {
+	"ID": "9",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO03",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Concilium",
+	"createdAt": "/Date(1602720000000)/"
+}, {
+	"ID": "10",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP04",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Transplaneta",
+	"createdAt": "/Date(1601078400000)/"
+}, {
+	"ID": "11",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC04",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Ecoempaques",
+	"createdAt": "/Date(1596412800000)/"
+}, {
+	"ID": "12",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO04",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Concilium",
+	"createdAt": "/Date(1603324800000)/"
+}, {
+	"ID": "13",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP05",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Transplaneta",
+	"createdAt": "/Date(1601251200000)/"
+}, {
+	"ID": "14",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC05",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Ecoempaques",
+	"createdAt": "/Date(1602892800000)/"
+}, {
+	"ID": "15",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO05",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Concilium",
+	"createdAt": "/Date(1599350400000)/"
+}, {
+	"ID": "16",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP06",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Transplaneta",
+	"createdAt": "/Date(1598140800000)/"
+}, {
+	"ID": "17",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC06",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Ecoempaques",
+	"createdAt": "/Date(1575936000000)/"
+}, {
+	"ID": "18",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO06",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Concilium",
+	"createdAt": "/Date(1589760000000)/"
+}, {
+	"ID": "19",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP07",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Transplaneta",
+	"createdAt": "/Date(1577404800000)/"
+}, {
+	"ID": "20",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC07",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Ecoempaques",
+	"createdAt": "/Date(1576540800000)/"
+}, {
+	"ID": "21",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO07",
+	"name": "Reporte del error",
+	"description": "Se presentó un error en la aplicación",
+	"createdBy": "Concilium",
+	"createdAt": "/Date(1576627200000)/"
+}, {
+	"ID": "22",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP01",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorJuan Diego Trujillo",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1597622400000)/"
+}, {
+	"ID": "23",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC01",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorDaniel Augusto Ramírez",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1582070400000)/"
+}, {
+	"ID": "24",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO01",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorDaniel Augusto Ramírez",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1601424000000)/"
+}, {
+	"ID": "25",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP02",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorJuan Diego Trujillo",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1604707200000)/"
+}, {
+	"ID": "26",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC02",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorDaniel Augusto Ramírez",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1595462400000)/"
+}, {
+	"ID": "27",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO02",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorJuan Diego Trujillo",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1601251200000)/"
+}, {
+	"ID": "28",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP03",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorDaniel Augusto Ramírez",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1605916800000)/"
+}, {
+	"ID": "29",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC03",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorDaniel Augusto Ramírez",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1577577600000)/"
+}, {
+	"ID": "30",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO03",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorJuan Diego Trujillo",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1602806400000)/"
+}, {
+	"ID": "31",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP04",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorDaniel Augusto Ramírez",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1601164800000)/"
+}, {
+	"ID": "32",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC04",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorJuan Diego Trujillo",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1596499200000)/"
+}, {
+	"ID": "33",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO04",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorDaniel Augusto Ramírez",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1603411200000)/"
+}, {
+	"ID": "34",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP05",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorDaniel Augusto Ramírez",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1601337600000)/"
+}, {
+	"ID": "35",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC05",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorJuan Diego Trujillo",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1602979200000)/"
+}, {
+	"ID": "36",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO05",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorDaniel Augusto Ramírez",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1599436800000)/"
+}, {
+	"ID": "37",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP06",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorJuan Diego Trujillo",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1598227200000)/"
+}, {
+	"ID": "38",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC06",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorDaniel Augusto Ramírez",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1576022400000)/"
+}, {
+	"ID": "39",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO06",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorDaniel Augusto Ramírez",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1589846400000)/"
+}, {
+	"ID": "40",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP07",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorJuan Diego Trujillo",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1577491200000)/"
+}, {
+	"ID": "41",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC07",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorDaniel Augusto Ramírez",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1576627200000)/"
+}, {
+	"ID": "42",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO07",
+	"name": "Asignación a desarrollador",
+	"description": "Se asigna el error al desarrolladorJuan Diego Trujillo",
+	"createdBy": "Gabriel Pinto",
+	"createdAt": "/Date(1576713600000)/"
+}, {
+	"ID": "43",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP01",
+	"name": "Confirmación de solución del error por parte del cliente",
+	"description": "A la espera de confirmación por parte del cliente",
+	"createdBy": "Transplaneta",
+	"createdAt": "/Date(1597968000000)/"
+}, {
+	"ID": "44",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC01",
+	"name": "Confirmación de solución del error por parte del cliente",
+	"description": "A la espera de confirmación por parte del cliente",
+	"createdBy": "Ecoempaques",
+	"createdAt": "/Date(1582416000000)/"
+}, {
+	"ID": "45",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO01",
+	"name": "Confirmación de solución del error por parte del cliente",
+	"description": "A la espera de confirmación por parte del cliente",
+	"createdBy": "Concilium",
+	"createdAt": "/Date(1601769600000)/"
+}, {
+	"ID": "46",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP02",
+	"name": "Confirmación de solución del error por parte del cliente",
+	"description": "A la espera de confirmación por parte del cliente",
+	"createdBy": "Transplaneta",
+	"createdAt": "/Date(1605052800000)/"
+}, {
+	"ID": "47",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC02",
+	"name": "Confirmación de solución del error por parte del cliente",
+	"description": "A la espera de confirmación por parte del cliente",
+	"createdBy": "Ecoempaques",
+	"createdAt": "/Date(1595808000000)/"
+}, {
+	"ID": "48",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO02",
+	"name": "Confirmación de solución del error por parte del cliente",
+	"description": "A la espera de confirmación por parte del cliente",
+	"createdBy": "Concilium",
+	"createdAt": "/Date(1601596800000)/"
+}, {
+	"ID": "49",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP03",
+	"name": "Confirmación de solución del error por parte del cliente",
+	"description": "A la espera de confirmación por parte del cliente",
+	"createdBy": "Transplaneta",
+	"createdAt": "/Date(1606262400000)/"
+}, {
+	"ID": "50",
+	"___FK_fd995a79c2a2a823148c658a_00004": "EC03",
+	"name": "Confirmación de solución del error por parte del cliente",
+	"description": "A la espera de confirmación por parte del cliente",
+	"createdBy": "Ecoempaques",
+	"createdAt": "/Date(1577923200000)/"
+}, {
+	"ID": "51",
+	"___FK_fd995a79c2a2a823148c658a_00004": "CO03",
+	"name": "Confirmación de solución del error por parte del cliente",
+	"description": "A la espera de confirmación por parte del cliente",
+	"createdBy": "Concilium",
+	"createdAt": "/Date(1603152000000)/"
+}, {
+	"ID": "52",
+	"___FK_fd995a79c2a2a823148c658a_00004": "TP04",
+	"name": "Confirmación de solución del error por parte del cliente",
+	"description": "A la espera de confirmación por parte del cliente",
+	"createdBy": "Transplaneta",
+	"createdAt": "/Date(1601510400000)/"
+}]

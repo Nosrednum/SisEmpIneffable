@@ -1,0 +1,45 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.ineffableErrorsList.controller.P0_1460990764684"
+	xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+	<Popover bounce="false" contentHeight="auto" contentWidth="350px" horizontalScrolling="true" modal="false" offsetX="0" offsetY="0"
+		placement="Right" showHeader="true" title="Title" verticalScrolling="true" visible="true">
+		<content>
+			<ObjectHeader intro="" title="Item" icon="sap-icon://employee" number="" numberUnit="" numberState="None" backgroundDesign="Translucent"
+				condensed="false" visible="true">
+				<attributes>
+					<ObjectAttribute text="Item Attribute" active="false" visible="true"/>
+				</attributes>
+				<statuses/>
+				<markers/>
+			</ObjectHeader>
+			<form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveLayout" editable="false" visible="true">
+				<form:content>
+					<Label text="Mobile" design="Standard" width="auto" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+					<Text text="Text 1" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+					<Label text="Phone" design="Standard" width="auto" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+					<Text text="Text 2" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+					<Label text="Email" design="Standard" width="auto" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+					<Text text="Text 3" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+				</form:content>
+				<form:title>
+					<core:Title text="Contact Details" level="Auto"/>
+				</form:title>
+			</form:SimpleForm>
+			<form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveLayout" editable="false" visible="true">
+				<form:content>
+					<Label text="Name" design="Standard" width="auto" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+					<Text text="Text 1" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+					<Label text="Address" design="Standard" width="auto" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+					<Text text="Text 2" width="auto" maxLines="3" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+				</form:content>
+				<form:title>
+					<core:Title text="Company" level="Auto"/>
+				</form:title>
+			</form:SimpleForm>
+		</content>
+		<beginButton/>
+		<customHeader/>
+		<endButton/>
+		<footer/>
+		<subHeader/>
+	</Popover>
+</core:FragmentDefinition>

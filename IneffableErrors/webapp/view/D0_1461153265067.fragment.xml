@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.ineffableErrorsList.controller.D0_1461153265067"
+	xmlns="sap.m">
+	<Dialog contentHeight="auto" contentWidth="100px" horizontalScrolling="false" showHeader="true" state="None" stretch="false" title="Approve"
+		type="Standard" verticalScrolling="false">
+		<content>
+			<HBox alignItems="Center" direction="Column" fitContainer="false" height="48px" justifyContent="Start" renderType="Div" visible="true"
+				displayInline="false">
+				<items>
+					<Text text="Approve the request submitted by :" width="239px" maxLines="3" wrapping="true" textAlign="Begin" textDirection="Inherit"
+						visible="true"/>
+					<HBox alignItems="Stretch" direction="Row" fitContainer="false" height="48px" justifyContent="Start" renderType="Div" visible="true"
+						displayInline="false">
+						<items>
+							<Text text="Text" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<Text text="?" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</items>
+						<layoutData/>
+					</HBox>
+				</items>
+				<layoutData/>
+			</HBox>
+		</content>
+		<beginButton/>
+		<buttons>
+			<Button text="OK" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+			<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onButtonPress"/>
+		</buttons>
+		<customHeader/>
+		<endButton/>
+		<subHeader/>
+	</Dialog>
+</core:FragmentDefinition>
